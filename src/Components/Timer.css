@@ -1,0 +1,133 @@
+body {
+  background-color: #8ecae6;
+  color: #023047;
+}
+.timer-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 0 15px;
+}
+.timer-box {
+  background-color: #219ebc;
+  border-radius: 12px;
+  padding: 25px;
+}
+.box-header {
+  background-color: #f1faee;
+  text-align: center;
+  padding: 20px 0;
+  border-radius: 12px 12px 0 0;
+}
+.box-header h1 {
+  text-transform: capitalize;
+  letter-spacing: 4px;
+  font-size: 3rem;
+}
+.box-body {
+  background-color: #a8dadc;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-body .item {
+  width: 200px;
+  height: 200px;
+  background-color: #457b9d;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.box-body .item .item-title {
+  position: absolute;
+  top: -40px;
+  left: 40%;
+  height: auto;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  color: #1d3557;
+  font-weight: 700;
+  z-index: 1;
+}
+.box-body .item h1 {
+  font-size: 3rem;
+}
+.box-body span {
+  font-size: 4rem;
+  height: 100px;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-body .btn {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background-color: #1d3557;
+  color: #fff;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.box-body .btn:hover {
+  background-color: #fff;
+  color: #1d3557;
+}
+.box-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1d3557;
+  padding: 25px 0;
+  border-radius: 0 0 12px 12px;
+}
+.box-footer button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 15px;
+  border: none;
+  outline: none;
+  color: #f1faee;
+  background-color: #b7b7a4;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.box-footer .btn-start {
+  background-color: #00f5d4;
+}
+.box-footer .btn-stop {
+  background-color: #f94144;
+}
+.box-footer .btn-reset {
+  background-color: #00bbf9;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 60%;
+  }
+  .timer-container {
+    max-width: 400px;
+  }
+  .box-body .btn {
+    width: 25px;
+    height: 25px;
+  }
+  .box-footer button {
+    width: 75px;
+    height: 75px;
+  }
+}
